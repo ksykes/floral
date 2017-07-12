@@ -11,7 +11,7 @@
 }
 
 .bookingText {
-	padding: 4rem 2rem;
+	padding: 3.5rem 2rem;
 }
 
 .bookingForm {
@@ -20,19 +20,53 @@
 	justify-content: space-between;
 }
 
-label {
-	position: relative;
-}
-
-.name span, .email span, .phone span {
-	position: absolute;
-	z-index: 10;
-	top: 3px;
-	left: 4px;
-}
-
 input {
 	background: #666666;
 	border: none;
-	padding: 2rem;
+	padding: 1rem 2rem;
+	margin: 0 0 2rem 0;
+	font-family: 'Playfair Display', serif;
+	color: white;
+	font-size: 1.4rem;
+	font-style: italic;
+}
+
+input[type=submit] {
+	background: $red;
+	font-family: 'Poppins', serif;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 0.25rem;
+	font-style: normal;
+}
+
+input::placeholder {
+	font-family: 'Playfair Display', serif;
+	color: white;
+	font-size: 1.4rem;
+	font-style: italic;
+}
+
+input[type=text], input[type=email] {
+	width: calc(50% - 1rem);
+}
+
+input[type=text] {
+	margin-right: 1rem;
+}
+
+input[type=phone], input[type=date], input[type=submit] {
+	width: calc(33.33% - 1rem);
+	margin-right: 0 1rem 0 0;
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.bookingText p:first-child {
+	margin-top: 1.5rem;
+}
+
+.bookingText p:last-child {
+	margin-bottom: 0;
 }

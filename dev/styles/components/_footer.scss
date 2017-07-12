@@ -1,0 +1,21 @@
+.footerLogo {
+	max-width: 330px;
+	margin: 2rem auto;
+}
+
+.footerImages {
+	display: flex;
+	justify-content: space-between;
+	font-size: 0;
+}
+
+.instaImages {
+	width: 20%;
+	img {
+		max-width: 100%;
+	}
+}
+
+.footerBar {
+	background-color: $darkGrey;
+}
