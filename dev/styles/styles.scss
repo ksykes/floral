@@ -1,1 +1,14 @@
-@import 'partials/setup';
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'base/setup';
+@import 'base/base';
+@import 'base/typography';
+@import 'components/header';
+@import 'components/welcome';
+@import 'components/popular';
+@import 'components/sponsors';
+@import 'components/promos';
+@import 'components/testimonials';
+@import 'components/products';
+@import 'components/blog';
+@import 'components/booking';

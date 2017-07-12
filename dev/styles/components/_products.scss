@@ -1,0 +1,30 @@
+.products {
+	padding: 8rem 0;
+	background-image: url('../../assets/productBackground.jpg');
+	.innerWrapper {
+		display: flex;
+	}
+}
+
+.productText {
+	width: 20%;
+	padding-top: 2rem;
+}
+
+.productSelection {
+	width: 80%;
+	padding-left: 2rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.productInfo {
+	width: 33.33%;
+	margin-right: 2rem;
+	img {
+		max-width: 100%;
+	}
+	&:last-child {
+		margin-right: 0;
+	}
+}

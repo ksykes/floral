@@ -1,0 +1,52 @@
+.popular {
+	background-image: url('../../assets/popularBackground.jpg');
+	padding: 8rem 0 12rem 0;
+}
+
+.popularServices {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 2rem;
+}
+
+.service {
+	margin-right: 2rem;
+	width: calc(33.33% - (2rem / 3));
+	position: relative;
+	&:last-child {
+		margin-right: 0;
+	}
+	&:hover {
+		cursor: pointer;
+		.serviceInfo {
+			border: 0.25rem solid $red;
+			button {
+				background: $red;
+			}
+		}
+	}
+}
+
+.serviceInfo {
+	background: white;
+	box-shadow: 14px 14px 20px 0px rgba(0, 0, 0, 0.36);
+	width: 80%;
+	padding: 2rem 1rem;
+	position: absolute;
+	top: 80%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	border: 0.25rem solid $green;
+	outline: 0.5rem solid white;
+}
+
+.serviceInfo button {
+	border: none;
+	padding: 1rem 4rem;
+	background: $green;
+	position: absolute;
+	width: 60%;
+	left: 0; right: 0;
+	margin: 0 auto;
+}

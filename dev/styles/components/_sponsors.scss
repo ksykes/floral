@@ -1,0 +1,16 @@
+.sponsors {
+	padding: 8rem 0;
+	.innerWrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.sponsorLogo {
+	width: 20%;
+	margin: 0;
+	img {
+		max-width: 100%;
+	}
+}

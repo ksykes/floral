@@ -1,0 +1,38 @@
+.booking {
+	background: $darkGrey;
+	display: flex;
+}
+
+.bookingImage, .bookingText {
+	width: 50%;
+	img {
+		max-width: 100%;
+	}
+}
+
+.bookingText {
+	padding: 4rem 2rem;
+}
+
+.bookingForm {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+label {
+	position: relative;
+}
+
+.name span, .email span, .phone span {
+	position: absolute;
+	z-index: 10;
+	top: 3px;
+	left: 4px;
+}
+
+input {
+	background: #666666;
+	border: none;
+	padding: 2rem;
+}

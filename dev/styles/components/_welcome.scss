@@ -1,0 +1,29 @@
+.welcome {
+	margin: 8rem 0;
+}
+
+.welcome .innerWrapper {
+	display: flex;
+	// flex-direction: column;
+	.welcomeText, .welcomeVideo {
+		width: calc(50% - 2rem);
+	}
+	.welcomeText {
+		margin-right: 2rem;
+	}
+	.welcomeVideo {
+		margin-left: 2rem;
+		position: relative;
+		.playBtn {
+			position: absolute;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			top: 50%;
+			transform: translateY(-50%);
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}

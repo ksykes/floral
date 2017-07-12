@@ -1,0 +1,77 @@
+.topBar {
+	width: 100%;
+	background: $darkGrey;
+	color: white;
+	.innerWrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+	a, p {
+		color: white;
+	}
+	ul, p {
+		display: inline-block;
+	}
+}
+
+ul.socialLinks {
+	padding: 0;
+	li {
+		list-style: none;
+		display: inline-block;
+	}
+}
+
+// LOGO
+
+.logo {
+	padding: 2rem 0;
+	display: flex;
+	justify-content: center;
+}
+
+// HEADER SLIDER
+
+.heroImages {
+	font-size: 0;
+	position: relative;
+	img {
+		max-width: 33.33%;
+	}
+}
+
+.heroText {
+	background: white;
+	border: 1rem solid $lightGrey;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	h3 {
+		margin-top: 2.5rem;
+	}
+	h4 {
+		margin-bottom: 2.5rem;
+	}
+}
+
+// NAVIGATION
+
+.navBar {
+	background: $lightGrey;
+	display: flex;
+	justify-content: center;
+	.nav {
+		margin: 0;
+		padding: 3rem 0;
+		// display: inline-block;
+		li {
+			display: inline-block;
+			padding-right: 2rem;
+			&:last-child {
+				padding-right: 0;
+			}
+		}
+	}
+}

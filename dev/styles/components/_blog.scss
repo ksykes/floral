@@ -1,0 +1,19 @@
+.blog {
+	padding: 8rem 0;
+}
+
+.blogFeed {
+	display: flex;
+	justify-content: space-between;
+}
+
+.blogPost {
+	width: 33.33%;
+	margin-right: 2rem;
+	&:last-child {
+		margin-right: 0;
+	}
+	img {
+		max-width: 100%;
+	}
+}

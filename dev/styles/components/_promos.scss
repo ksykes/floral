@@ -1,0 +1,32 @@
+.promos {
+	padding: 8rem 0;
+	background: #F2F2F2;
+}
+
+.promotions {
+	display: flex;
+}
+
+.promotionOffer {
+	width: 25%;
+	background: white;
+	margin-right: 1rem;
+	padding: 1rem;
+	text-align: center;
+	&:last-child {
+		margin-right: 0;
+	}
+	img {
+		width: 100%;
+	}
+	button {
+		background: #999999;
+		color: white;
+		border: none;
+		padding: 1rem 3rem;
+		margin-bottom: 2rem;
+		&:hover {
+			background: $red;
+		}
+	}
+}
