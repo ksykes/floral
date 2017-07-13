@@ -321,20 +321,21 @@ ul.socialLinks {
   display: flex;
   justify-content: center; }
 
+.headerHero {
+  background-image: url("https://placebear.com/1902/500");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10rem 0; }
+
 .heroImages {
   font-size: 0;
   position: relative; }
   .heroImages img {
-    max-width: 33.33%; }
+    max-width: 100%; }
 
 .heroText {
   background: white;
-  border: 1rem solid #EDEDED;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%); }
+  border: 1rem solid #EDEDED; }
   .heroText h3 {
     margin-top: 2.5rem; }
   .heroText h4 {

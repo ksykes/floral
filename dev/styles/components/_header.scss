@@ -32,22 +32,24 @@ ul.socialLinks {
 
 // HEADER SLIDER
 
+.headerHero {
+	background-image: url('https://placebear.com/1902/500');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 10rem 0;
+}
+
 .heroImages {
 	font-size: 0;
 	position: relative;
 	img {
-		max-width: 33.33%;
+		max-width: 100%;
 	}
 }
 
 .heroText {
 	background: white;
 	border: 1rem solid $lightGrey;
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 50%;
-	transform: translateY(-50%);
 	h3 {
 		margin-top: 2.5rem;
 	}
@@ -65,7 +67,6 @@ ul.socialLinks {
 	.nav {
 		margin: 0;
 		padding: 3rem 0;
-		// display: inline-block;
 		li {
 			display: inline-block;
 			padding-right: 2rem;
