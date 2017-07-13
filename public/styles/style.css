@@ -149,8 +149,10 @@ h2 {
   color: #222222;
   font-size: 4.8rem;
   text-align: center;
-  text-transform: uppercase;
   margin: 0; }
+
+header h2 {
+  text-transform: uppercase; }
 
 .welcome h2 {
   text-transform: none; }
@@ -161,17 +163,18 @@ h2 {
 .popularServices h2, .products h2 {
   color: #222222;
   font-size: 2.5rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  text-transform: none; }
 
 .products h2 {
   text-align: left; }
 
-.promos h2 {
+.promotions h2 {
   text-transform: none;
   font-size: 2rem;
   margin-bottom: 2rem; }
 
-.productInfo h2, .blogPostInfo h2 {
+.productInfo h2, .blogFeed h2 {
   font-size: 1.8rem;
   text-align: center;
   text-transform: none; }
@@ -203,11 +206,11 @@ h3 {
 .popularServices h3, .promos h3, .products h3 {
   color: #444444; }
 
-.promos h3 {
+.promotions h3 {
   margin-top: 2rem;
   font-size: 1.2rem; }
 
-.productInfo h3, .blogPostInfo h3 {
+.productInfo h3, .blogFeed h3 {
   font-size: 1.2rem;
   text-align: center;
   color: #426947;
@@ -215,6 +218,11 @@ h3 {
 
 .bookingText h3 {
   color: white;
+  font-size: 1.4rem;
+  text-align: center; }
+
+.testimonialText h3 {
+  color: #426947;
   font-size: 1.4rem;
   text-align: center; }
 
@@ -242,6 +250,13 @@ p {
   color: #444444;
   font-size: 1.8rem; }
 
+.topBar p {
+  font-size: 1.3rem; }
+
+.topBar ul li {
+  font-size: 1.3rem;
+  padding-left: 1rem; }
+
 .welcome p {
   text-align: center; }
 
@@ -257,7 +272,7 @@ p.blogMetadata {
   font-style: italic;
   text-align: center; }
 
-.blogPostInfo p {
+.blogPost p {
   font-size: 1.4rem;
   text-align: center; }
 
@@ -268,6 +283,15 @@ p.blogMetadata {
 
 .bookingText a {
   color: white; }
+
+.testimonialText p {
+  font-size: 1.4rem;
+  text-align: center;
+  line-height: 2rem; }
+
+p.clientName {
+  color: #C03A3A;
+  font-family: 'Poppins', serif; }
 
 .footerBar p {
   font-family: 'Playfair Display', serif;
@@ -365,16 +389,23 @@ ul.socialLinks {
     margin-right: 2rem; }
   .welcome .innerWrapper .welcomeVideo {
     margin-left: 2rem;
-    position: relative; }
-    .welcome .innerWrapper .welcomeVideo .playBtn {
+    position: relative;
+    cursor: pointer; }
+    .welcome .innerWrapper .welcomeVideo::before {
+      content: "\f144";
+      font-family: FontAwesome;
+      font-size: 6rem;
+      color: white;
+      opacity: 0.8;
       position: absolute;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
       top: 50%;
-      transform: translateY(-50%); }
-      .welcome .innerWrapper .welcomeVideo .playBtn:hover {
-        cursor: pointer; }
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .welcome .innerWrapper .welcomeVideo:hover:before {
+      color: #eeeeee; }
+    .welcome .innerWrapper .welcomeVideo video {
+      max-width: 100%;
+      height: 100%; }
 
 .popular {
   background-image: url("../../assets/popularBackground.jpg");
@@ -389,6 +420,8 @@ ul.socialLinks {
   margin-right: 2rem;
   width: calc(33.33% - (2rem / 3));
   position: relative; }
+  .service img {
+    max-width: 100%; }
   .service:last-child {
     margin-right: 0; }
   .service:hover {
@@ -430,16 +463,19 @@ ul.socialLinks {
 
 .sponsorLogo {
   width: 20%;
-  margin: 0; }
+  margin: 0 6rem 0 0; }
+  .sponsorLogo:last-child {
+    margin-right: 0; }
   .sponsorLogo img {
-    max-width: 100%; }
+    width: 100%; }
 
 .promos {
   padding: 8rem 0;
   background: #F2F2F2; }
 
 .promotions {
-  display: flex; }
+  display: flex;
+  margin-top: 2rem; }
 
 .promotionOffer {
   width: 25%;
@@ -508,16 +544,55 @@ ul.socialLinks {
   padding: 8rem 0; }
 
 .blogFeed {
-  display: flex;
-  justify-content: space-between; }
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-template-rows: 50% 50%; }
 
 .blogPost {
-  width: 33.33%;
-  margin-right: 2rem; }
-  .blogPost:last-child {
-    margin-right: 0; }
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center; }
   .blogPost img {
     max-width: 100%; }
+
+.blogPostImage1 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 1; }
+
+.blogPostInfo1 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 2; }
+
+.blogPostInfo2 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1; }
+
+.blogPostImage2 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2; }
+
+.blogPostImage3 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1; }
+
+.blogPostInfo3 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 2; }
 
 .booking {
   background: #444444;
