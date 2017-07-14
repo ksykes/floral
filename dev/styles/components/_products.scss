@@ -28,3 +28,32 @@
 		margin-right: 0;
 	}
 }
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	.products .innerWrapper {
+		display: block;
+	}
+	.productText, .productSelection {
+		width: 100%;
+		padding: 0;
+	}
+	.productText {
+		margin-bottom: 2rem;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	.productSelection {
+		display: block;
+	}
+
+	.productInfo {
+		width: 100%;
+		margin-right: 0;
+		img {
+			width: 100%;
+		}
+	}
+}

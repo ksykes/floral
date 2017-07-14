@@ -378,6 +378,16 @@ ul.socialLinks {
       .navBar .nav li:last-child {
         padding-right: 0; }
 
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .topBar .innerWrapper {
+    display: block;
+    text-align: center; }
+    .topBar .innerWrapper div p:first-child {
+      margin-top: 1rem; }
+    .topBar .innerWrapper div p:last-child {
+      margin-bottom: 1rem; } }
+
 .welcome {
   margin: 8rem 0; }
 
@@ -406,6 +416,13 @@ ul.socialLinks {
     .welcome .innerWrapper .welcomeVideo video {
       max-width: 100%;
       height: 100%; }
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .welcome .innerWrapper {
+    display: block; }
+    .welcome .innerWrapper .welcomeText, .welcome .innerWrapper .welcomeVideo {
+      width: 100%; } }
 
 .popular {
   background-image: url("../../assets/popularBackground.jpg");
@@ -454,6 +471,27 @@ ul.socialLinks {
   right: 0;
   margin: 0 auto; }
 
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .popularServices h2 {
+    font-size: 1.6rem; }
+  .popular h3 {
+    font-size: 1.2rem; }
+  .serviceInfo button {
+    padding: 1rem 0.25rem; } }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .popularServices {
+    display: block; }
+    .popularServices .service {
+      width: 100%;
+      margin-bottom: 10rem; }
+      .popularServices .service img {
+        width: 100%; }
+  .serviceInfo {
+    top: 90%; } }
+
 .sponsors {
   padding: 8rem 0; }
   .sponsors .innerWrapper {
@@ -468,6 +506,17 @@ ul.socialLinks {
     margin-right: 0; }
   .sponsorLogo img {
     width: 100%; }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .sponsors .innerWrapper {
+    flex-wrap: wrap;
+    justify-content: center; }
+  .sponsorLogo {
+    margin: 1rem 0;
+    width: 30%; }
+    .sponsorLogo img {
+      padding: 0 2rem; } }
 
 .promos {
   padding: 8rem 0;
@@ -496,6 +545,16 @@ ul.socialLinks {
     .promotionOffer button:hover {
       background: #C03A3A; }
 
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .promotions {
+    flex-wrap: wrap; }
+  .promotionOffer {
+    width: calc(50% - 1rem);
+    margin-bottom: 1rem; }
+    .promotionOffer:nth-child(2n) {
+      margin-right: 0; } }
+
 .testimonials {
   padding: 8rem 0; }
   .testimonials .innerWrapper {
@@ -515,6 +574,15 @@ ul.socialLinks {
 .testimonialText {
   width: 50%;
   padding-left: 2rem; }
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .testimonials .innerWrapper {
+    flex-wrap: wrap; }
+  .testimonialImage, .testimonialText {
+    width: 100%; }
+  .testimonialText {
+    margin-top: 2rem; } }
 
 .products {
   padding: 8rem 0;
@@ -539,6 +607,26 @@ ul.socialLinks {
     max-width: 100%; }
   .productInfo:last-child {
     margin-right: 0; }
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .products .innerWrapper {
+    display: block; }
+  .productText, .productSelection {
+    width: 100%;
+    padding: 0; }
+  .productText {
+    margin-bottom: 2rem; } }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .productSelection {
+    display: block; }
+  .productInfo {
+    width: 100%;
+    margin-right: 0; }
+    .productInfo img {
+      width: 100%; } }
 
 .blog {
   padding: 8rem 0; }
@@ -593,6 +681,57 @@ ul.socialLinks {
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 2; }
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .blogFeed {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33.33% 33.33% 33.33%; }
+  .blogPostInfo1 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1; }
+  .blogPostInfo2 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2; }
+  .blogPostImage2 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2; }
+  .blogPostImage3 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3; }
+  .blogPostInfo3 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3; } }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .blogFeed {
+    display: flex;
+    flex-wrap: wrap; }
+  .blogPost {
+    width: 100%; }
+  .blogPostImage1 {
+    order: 1; }
+  .blogPostInfo1 {
+    order: 2; }
+  .blogPostImage2 {
+    order: 3; }
+  .blogPostInfo2 {
+    order: 4; }
+  .blogPostImage3 {
+    order: 5; }
+  .blogPostInfo3 {
+    order: 6; } }
 
 .booking {
   background: #444444;
@@ -652,6 +791,13 @@ input[type=phone], input[type=date], input[type=submit] {
 
 .bookingText p:last-child {
   margin-bottom: 0; }
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .booking {
+    display: block; }
+  .bookingImage, .bookingText {
+    width: 100%; } }
 
 .footerLogo {
   max-width: 330px;

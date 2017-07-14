@@ -70,3 +70,14 @@ input[type=phone], input[type=date], input[type=submit] {
 .bookingText p:last-child {
 	margin-bottom: 0;
 }
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	.booking {
+		display: block;
+	}
+	
+	.bookingImage, .bookingText {
+		width: 100%;
+	}
+}

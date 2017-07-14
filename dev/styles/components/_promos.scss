@@ -31,3 +31,17 @@
 		}
 	}
 }
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	.promotions {
+		flex-wrap: wrap;
+	}
+	.promotionOffer {
+		width: calc(50% - 1rem);
+		margin-bottom: 1rem;
+		&:nth-child(2n) {
+			margin-right: 0;
+		}
+	}
+}

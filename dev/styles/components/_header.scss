@@ -76,3 +76,17 @@ ul.socialLinks {
 		}
 	}
 }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	.topBar .innerWrapper {
+		display: block;
+		text-align: center;
+		div p:first-child {
+			margin-top: 1rem;
+		}
+		div p:last-child {
+			margin-bottom: 1rem;
+		}
+	}
+}

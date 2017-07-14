@@ -22,3 +22,16 @@
 	width: 50%;
 	padding-left: 2rem;
 }
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	.testimonials .innerWrapper {
+		flex-wrap: wrap;
+	}
+	.testimonialImage, .testimonialText {
+		width: 100%;
+	}
+	.testimonialText {
+		margin-top: 2rem;
+	}
+}

@@ -34,3 +34,13 @@
 		}
 	}
 }
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	.welcome .innerWrapper {
+		display: block;
+		.welcomeText, .welcomeVideo {
+			width: 100%;
+		}
+	}
+}

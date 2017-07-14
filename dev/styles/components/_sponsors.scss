@@ -17,3 +17,18 @@
 		width: 100%;
 	}
 }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	.sponsors .innerWrapper {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.sponsorLogo {
+		margin: 1rem 0;
+		width: 30%;
+		img {
+			padding: 0 2rem;
+		}
+	}
+}
